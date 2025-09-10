@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "template-microservice"
+version = "0.1.0"
+description = "Template microservice with FastAPI and Google Cloud integration"
+authors = ["Oliver Koyoc <oliver@monthly.la>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+starlette = "^0.27.0"
+pydantic = "^2.5.0"
+uvicorn = "^0.30.0"
+requests = "^2.31.0"
+SQLAlchemy = "^2.0.23"
+python-dotenv = "^1.0.0"
+google-cloud-secret-manager = "^2.18.1"
+google-auth = "^2.23.4"
+google-oauth2-tool = "^0.0.3"
+google-cloud-bigquery = "^3.13.0"
+pyyaml = "^6.0.1"
+pydantic-settings = "^2.10.1"
+greenlet = "3.0a1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+coverage = "^7.3.2"
+pre-commit = "^3.5.0"
+factory-boy = "^3.3.0"
+mypy = "^1.7.1"
+black = "^23.11.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
