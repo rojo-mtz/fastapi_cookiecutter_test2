@@ -21,5 +21,5 @@ COPY ./src/ /src
 # COPY ./key.json /src/key.json
 COPY ./deployment/gunicorn_config.py /src
 
-EXPOSE 9000
-ENTRYPOINT ["gunicorn","-k","uvicorn.workers.UvicornWorker","-b", "0.0.0.0:9000", "main:app"]
+EXPOSE 8080
+ENTRYPOINT ["gunicorn","-k","uvicorn.workers.UvicornWorker","-b", "0.0.0.0:8080", "main:app"]
